@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheet.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <nav id="mainNav" class="">
+           <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/pages/tischReservierung.html">Tisch Reservierung</a></li>
+            <li><a href="/pages/portfolioPage.html">Portfolio</a></li>
+            <li><a href="/pages/speisekarte.html">Speisekarte</a></li>
+            <li><a href="/pages/rezepteBlog.html">Rezepte-Blog</a></li>
+           </ul>
+        </nav>
+     <main>
+        <section>
+            <h2>Impressionen unserer Events</h2>
+            <a href="#kontaktformular" class="allinone-img">
+                <img src="resources/allinone1.png" alt="Gala-Dinner Beispiel">
+            </a>
+        </section>
+        <section class="description">
+            <h2>Unsere Catering-Pakete</h2>
+            <ul>
+                <li><strong>Gala-Dinner:</strong> Mehrgängiges Menü mit Service, edlem Gedeck und Dekoration.</li>
+                <li><strong>Flying Buffet:</strong> Kreative Häppchen, stilvoll serviert auf Tabletts.</li>
+                <li><strong>BBQ Deluxe:</strong> Live-Cooking unter freiem Himmel mit Grill-Spezialitäten.</li>
+                <li><strong>Vegan & Vital:</strong> Nachhaltiger Genuss für moderne Events.</li>
+            </ul>
+        </section>
+
+        <section>
+            <article>
+                <form id="kontaktformular">
+                    <h3>Kontaktieren Sie uns für Ihr Event</h3>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">E-Mail:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="event">Art des Events:</label>
+                    <select id="event" name="event">
+                        <option>Hochzeit</option>
+                        <option>Firmenevent</option>
+                        <option>Privatfeier</option>
+                        <option>Sonstiges</option>
+                    </select>
+
+                    <label for="nachricht">Nachricht:</label>
+                    <textarea id="nachricht" name="nachricht" rows="5"></textarea>
+
+                    <button type="submit">Anfrage senden</button>
+                </form>
+
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <nav id="footer_nav">
+            <ul>
+                <li>
+                    <a class="el" href="impressum.html">Impressum</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

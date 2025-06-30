@@ -7,12 +7,23 @@
     <meta name="author" content="lakdogan">
     <meta name="date" content="2025-06-30">
     <title>Event-Catering</title>
-    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-    <header>
-        <img src="resources/banner.png" alt="La Belle Cuisine Logo" class="banner-img">
+    <nav id="mainNav" class="">
+           <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/pages/tischReservierung.html">Tischreservierung</a></li>
+            <li><a href="/pages/portfolioPage.html">Portfolio</a></li>
+            <li><a href="/pages/speisekarte.html">Speisekarte</a></li>
+            <li><a href="/pages/rezepteBlog.html">Rezepte-Blog</a></li>
+           </ul>
+        </nav>
+    <header class="description">
+        <div class="banner"></div>
         <h1>
             "Unvergessliche Momente. Exquisites Catering."
         </h1>
@@ -22,62 +33,16 @@
             Mit Leidenschaft, Stil und viel Liebe zum Detail sorgen wir dafür, dass Ihre Gäste begeistert sind - nicht
             nur vom Essen, sondern vom gesamten Erlebnis.
         </h2>
-        <nav id="mainNav" class="">
-            <a href="#kontaktformular" class="cta-button">Jetzt unverbindlich anfragen!</a>
+        <nav>
+            <a href="/pages/kontaktformular.html" class="cta-button">Jetzt unverbindlich anfragen!</a>
         </nav>
     </header>
-    <main>
-        <section>
-            <h2>Impressionen unserer Events</h2>
-            <a href="#kontaktformular" class="allinone-img">
-                <img src="resources/allinone1.png" alt="Gala-Dinner Beispiel">
-            </a>
-        </section>
-        <section>
-            <h2>Unsere Catering-Pakete</h2>
-            <ul>
-                <li><strong>Gala-Dinner:</strong> Mehrgängiges Menü mit Service, edlem Gedeck und Dekoration.</li>
-                <li><strong>Flying Buffet:</strong> Kreative Häppchen, stilvoll serviert auf Tabletts.</li>
-                <li><strong>BBQ Deluxe:</strong> Live-Cooking unter freiem Himmel mit Grill-Spezialitäten.</li>
-                <li><strong>Vegan & Vital:</strong> Nachhaltiger Genuss für moderne Events.</li>
-            </ul>
-        </section>
-
-        <section>
-            <article>
-                <form id="kontaktformular">
-                    <h3>Kontaktieren Sie uns für Ihr Event</h3>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email">E-Mail:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="event">Art des Events:</label>
-                    <select id="event" name="event">
-                        <option>Hochzeit</option>
-                        <option>Firmenevent</option>
-                        <option>Privatfeier</option>
-                        <option>Sonstiges</option>
-                    </select>
-
-                    <label for="nachricht">Nachricht:</label>
-                    <textarea id="nachricht" name="nachricht" rows="5"></textarea>
-
-                    <button type="submit">Anfrage senden</button>
-                </form>
-
-            </article>
-            <article>
-
-            </article>
-        </section>
-    </main>
+   
     <footer>
         <nav id="footer_nav">
             <ul>
                 <li>
-                    <a href="impressum.html">Impressum</a>
+                    <a class="el" href="impressum.html">Impressum</a>
                 </li>
             </ul>
         </nav>
