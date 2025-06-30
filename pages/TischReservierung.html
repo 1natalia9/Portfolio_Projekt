@@ -1,29 +1,25 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tischreservierung</title>
-    <link rel="stylesheet" href="/stylesheet.css">
-
+  <link rel="stylesheet" href="/css/style.css">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      padding: 40px;
-    }
-
     h2 {
       text-align: center;
       color: #333;
+      margin-top: 2rem;
     }
 
     form {
       background-color: #fff;
       padding: 20px;
       max-width: 400px;
-      margin: auto;
+      margin: 2rem auto;
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
     label {
@@ -45,7 +41,7 @@
     }
 
     input[type="submit"] {
-      background-color:  #e06d06;
+      background-color: #e06d06;
       color: white;
       padding: 10px;
       margin-top: 20px;
@@ -57,7 +53,7 @@
     }
 
     input[type="submit"]:hover {
-      background-color:  #e06d06;
+      background-color: #b26700;
     }
 
     p {
@@ -67,43 +63,46 @@
     }
   </style>
 </head>
+
 <body>
+  <nav id="mainNav">
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/pages/tischReservierung.html">Tischreservierung</a></li>
+      <li><a href="/pages/portfolioPage.html">Portfolio</a></li>
+      <li><a href="/pages/speisekarte.html">Speisekarte</a></li>
+      <li><a href="/pages/rezepteBlog.html">Rezepte-Blog</a></li>
+    </ul>
+  </nav>
 
-  <nav id="mainNav" class="">
-           <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/pages/tischReservierung.html">Tischreservierung</a></li>
-            <li><a href="/pages/portfolioPage.html">Portfolio</a></li>
-            <li><a href="/pages/speisekarte.html">Speisekarte</a></li>
-            <li><a href="/pages/rezepteBlog.html">Rezepte-Blog</a></li>
-           </ul>
-        </nav>
+  <main>
+    <h2>Tisch reservieren</h2>
 
-  <h2>Tisch reservieren</h2>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
 
-  <form action="#" method="post">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
+      <label for="persons">Anzahl der Personen:</label>
+      <input type="number" id="persons" name="persons" min="1" required>
 
-    <label for="persons">Anzahl der Personen:</label>
-    <input type="number" id="persons" name="persons" min="1" required>
+      <label for="date">Datum:</label>
+      <input type="date" id="date" name="date" required>
 
-    <label for="date">Datum:</label>
-    <input type="date" id="date" name="date" required>
+      <label for="time">Uhrzeit:</label>
+      <input type="time" id="time" name="time" required>
 
-    <label for="time">Uhrzeit:</label>
-    <input type="time" id="time" name="time" required>
+      <label for="contact">Telefonnummer oder E-Mail:</label>
+      <input type="text" id="contact" name="contact" required>
 
-    <label for="contact">Telefonnummer oder E-Mail:</label>
-    <input type="text" id="contact" name="contact" required>
+      <input type="submit" value="Reservieren">
+    </form>
 
-    <input type="submit" value="Reservieren">
-  </form>
+    <p><em>Nach dem Absenden erhalten Sie eine Bestätigung per E-Mail.</em></p>
+  </main>
 
-  <p><em>Nach dem Absenden erhalten Sie eine Bestätigung per E-Mail.</em></p>
-
+  <footer>
+    <p>&copy; 2024 Unser Restaurant. Alle Rechte vorbehalten.</p>
+  </footer>
 </body>
-<footer>
-        <p>&copy; 2024 Unser Restaurant. Alle Rechte vorbehalten.</p>
-    </footer>
+
 </html>
