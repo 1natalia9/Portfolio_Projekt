@@ -1,27 +1,11 @@
-
-
-
 /* Navigation allgemein */
 #mainNav {
   background-color: #4b6584;
   width: 100%;
-  padding: 10px 0;
   height: 40px;
-}
-
-/* Liste horizontal ausrichten */
-#mainNav ul {
-  list-style: none;
-  margin: 0;
-  padding: 10px;
   display: flex;
   justify-content: center;
-  
-}
-
-/* Listenelemente */
-#mainNav li {
-  margin: 0 15px;
+  padding: 10px;
 }
 
 /* Links gestalten */
@@ -30,6 +14,7 @@
   color: white; /* Kein Blau */
   font-weight: bold;
   font-size: 16px;
+  padding: 10px;
   transition: color 0.3s ease;
 }
 

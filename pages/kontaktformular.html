@@ -8,40 +8,30 @@
         :root {
             --dark-purple: #161032;
         }
+/* Navigation allgemein */
+#mainNav {
+  background-color: #4b6584;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
 
-        
+/* Links gestalten */
+#mainNav a {
+  text-decoration: none;
+  color: white; /* Kein Blau */
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
 
-        /* Navigation */
-        #mainNav {
-            background-color: #4b6584;
-            width: 100%;
-            padding: 10px 0;
-            height: 40px;
-        }
-
-        #mainNav ul {
-            list-style: none;
-            margin: 0;
-            padding: 10px;
-            display: flex;
-            justify-content: center;
-        }
-
-        #mainNav li {
-            margin: 0 15px;
-        }
-
-        #mainNav a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            font-size: 16px;
-            transition: color 0.3s ease;
-        }
-
-        #mainNav a:hover {
-            color: #ffcc00;
-        }
+/* Hover-Effekt */
+#mainNav a:hover {
+  color: #ffcc00; /* z. B. Gelb beim Hover */
+}
 
         body {
     font-family: "Merriweather", serif;
@@ -112,17 +102,15 @@
     </style>
 </head>
 <body>
-
-    <nav id="mainNav">
-        <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/pages/tischReservierung.html">Tisch Reservierung</a></li>
-            <li><a href="/pages/portfolioPage.html">Portfolio</a></li>
-            <li><a href="/pages/speisekarte.html">Speisekarte</a></li>
-            <li><a href="/pages/rezepteBlog.html">Rezepte-Blog</a></li>
-        </ul>
-    </nav>
-
+ <nav id="mainNav" class="">
+           <ul>
+            <a href="#">Home</a>
+            <a href="/pages/tischReservierung.html">Tischreservierung</a>
+            <a href="/pages/portfolioPage.html">Portfolio</a>
+            <a href="/pages/speisekarte.html">Speisekarte</a>
+            <a href="/pages/rezepteBlog.html">Rezepte-Blog</a>
+           </ul>
+        </nav>
     <main>
         <section>
             <h2>Impressionen unserer Events</h2>
