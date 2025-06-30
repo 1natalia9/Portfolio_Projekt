@@ -1,0 +1,117 @@
+:root {
+    --dark-purple: #161032;
+    --icterine: #faff81;
+    --mikado-yellow: #ffc53a;
+    --cocoa-brown: #e06d06;
+    --tigers-eye: #b26700;
+}
+
+/* Grundlayout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--icterine);
+    color: var(--dark-purple);
+}
+
+/* Header-Bereich mit Bannerbild oben */
+header {
+    text-align: center;
+    background-color: var(--icterine);
+    padding: 2rem 1rem;
+}
+
+/* Bannerbild */
+.banner-img {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Überschriften im Header */
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--dark-purple);
+}
+
+header h2 {
+    font-size: 1.25rem;
+    color: var(--dark-purple);
+    max-width: 800px;
+    margin: 0 auto 1.5rem;
+    line-height: 1.6;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background-color: var(--cocoa-brown);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--tigers-eye);
+}
+
+/* Allgemeine Sektionen */
+section {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Bilder */
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    border-radius: 10px;
+}
+
+/* Formular */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+input,
+select,
+textarea,
+button {
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: 1px solid var(--dark-purple);
+    font-size: 1rem;
+}
+
+/* Formular-Button */
+button {
+    background-color: var(--cocoa-brown);
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--tigers-eye);
+}
+
+/* Footer */
+footer {
+    background-color: var(--mikado-yellow);
+    padding: 1rem;
+    text-align: center;
+    color: var(--dark-purple);
+}
