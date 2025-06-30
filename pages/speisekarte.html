@@ -1,51 +1,108 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Speisekarte</title>
-    <link rel="stylesheet" href="/css/style.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap"
         rel="stylesheet">
 </head>
 
 <style>
-    img {height: 1em;}
-   
-    h1 {
 
-font-size:100px;
 
+/* Navigation allgemein */
+#mainNav {
+  background-color: #4b6584;
+  width: 100%;
+  padding: 10px 0;
+  height: 40px;
 }
-html {
-  text-align: center;
+
+/* Liste horizontal ausrichten */
+#mainNav ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
   
 }
- h2{
 
-font-size:60px;
-
-
+/* Listenelemente */
+#mainNav li {
+  margin: 0 15px;
 }
-ul {
-  list-style-type: none;
+
+/* Links gestalten */
+#mainNav a {
+  text-decoration: none;
+  color: white; /* Kein Blau */
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+/* Hover-Effekt */
+#mainNav a:hover {
+  color: #ffcc00; /* z. B. Gelb beim Hover */
+}
+
+body {
+    font-family: "Merriweather", serif;
+    margin: 0;
+    padding: 0;
+}
+    img {
+        height: 1em;
+    }
+
+    h1 {
+
+        font-size: 100px;
+
+    }
+
+    html {
+        text-align: center;
+
+    }
+
+    h2 {
+
+        font-size: 60px;
+
+
+    }
+
+    ul {
+        list-style-type: none;
+    }
+    footer {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+    color: white;
 }
 </style>
+
 <body>
- <nav id="mainNav" class="">
-           <ul>
+    <nav id="mainNav" class="">
+        <ul>
             <li><a href="/index.html">Home</a></li>
             <li><a href="/pages/tischReservierung.html">Tisch Reservierung</a></li>
             <li><a href="/pages/portfolioPage.html">Portfolio</a></li>
             <li><a href="/pages/speisekarte.html">Speisekarte</a></li>
             <li><a href="/pages/rezepteBlog.html">Rezepte-Blog</a></li>
-           </ul>
-        </nav>
+        </ul>
+    </nav>
     <h1>Speisekarte</h1>
 
     <section>
         <h2>Vorspeisen</h2>
-        <ul> 
+        <ul>
             <li>
                 <strong>Zwiebelsuppe</strong>
                 <span>4.50€</span>
@@ -56,15 +113,16 @@ ul {
                 <span>5.90€</span>
                 <p>kleine Törtchen mit Sprossen</p>
             </li>------------------
-             <li>
+            <li>
                 <strong>Beilagensalat</strong>
                 <span>3.90€</span>
-                <p>mit Schmand-Dressing<img src="resources/Vegan.png"></p>
+                <p>mit Schmand-Dressing<img src="/ressources/Vegan.png"></p>
             </li>------------------
             <li>
                 <strong>Gemüsetopf</strong>
                 <span>5.50€</span>
-                <p> Verschiedene Gemüse mit Kräuter der Provence für ein besonderes Aroma<img src="resources/Vegan.png"></p>
+                <p> Verschiedene Gemüse mit Kräuter der Provence für ein besonderes Aroma<img src="/ressources/Vegan.png">
+                </p>
             </li>
         </ul>
     </section>
@@ -82,7 +140,7 @@ ul {
                 <span>12.00€</span>
                 <p>Schnitzel Wiener art, serviert mit Pommes</p>
             </li>------------------
-             <li>
+            <li>
                 <strong>Chicken Wings (8 Stück)</strong>
                 <span>15.90€</span>
                 <p>Spicy Wings mit hausgemachtem Barbecue-Dip und Pommes</p>
@@ -92,21 +150,21 @@ ul {
                 <span>22.90€</span>
                 <p>Schmorgericht mir Rindfleisch und Burgunderwein</p>
             </li>------------------
-             
+
             <li>
                 <strong>Kartoffelpfanne</strong>
                 <span>24.90€</span>
                 <p>Kartoffeln mit Emmentaler, Kabanossi und Gemüse</p>
             </li>------------------
-             <li>
+            <li>
                 <strong>Flammkuchen</strong>
                 <span>15.90€</span>
-                <p>nach elsässer art<img src="resources/Vegan.png"></p>
+                <p>nach elsässer art<img src="/ressources/Vegan.png"></p>
             </li>------------------
             <li>
                 <strong>Ratatouille</strong>
                 <span>19.90€</span>
-                <p>Geschmorter Gemüseneintopf<img src="resources/Vegan.png"></p>
+                <p>Geschmorter Gemüseneintopf<img src="/ressources/Vegan.png"></p>
             </li>
         </ul>
     </section>
@@ -122,7 +180,7 @@ ul {
             <li>
                 <strong>Obstsalat</strong>
                 <span>7.00€</span>
-                <p>Verschiedene Früchte mit Honig und Nüssen<img src="resources/Vegan.png"></p>
+                <p>Verschiedene Früchte mit Honig und Nüssen<img src="/ressources/Vegan.png"></p>
             </li>
         </ul>
     </section>
@@ -130,12 +188,12 @@ ul {
     <section>
         <h2>Getränke</h2>
         <ul>
-             <li>
+            <li>
                 <strong>Coca-Cola 0,33l</strong>
                 <span>4,35€</span>
-                <p> 
+                <p>
                 <p>Koffeinhaltiges Erfrischungsgetränk mit Pflanzenextrakten</p>
-            </p>
+                </p>
             </li>------------------
             <li>
                 <strong>Fanta 0,33l</strong>
@@ -161,4 +219,5 @@ ul {
     </section>
 
 </body>
+
 </html>

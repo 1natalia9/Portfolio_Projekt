@@ -1,132 +1,148 @@
+
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
     <meta charset="UTF-8">
-    <title>Rezepte-Blog</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: #fdfdfd;
-            color: #4b6584;
-            font-family: "Merriweather", serif;
-            font-size: 20px;
-        }
-
-        header {
-            color: #4b6584;
-            padding: 20px;
-            text-align: center;
-            font-size: 30px;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        .recipe {
-            margin-bottom: 40px;
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 20px;
-        }
-
-        .recipe img {
-            width: 100%;
-            max-width: 400px;
-            height: auto;
-            display: block;
-            margin: 10px 0;
-        }
-
-        h2 {
-            color: #4b6584;
-        }
-    </style>
+    <title>Rezepte-Karten</title>
 </head>
+<style>
 
+/* Navigation allgemein */
+#mainNav {
+  background-color: #4b6584;
+  width: 100%;
+  padding: 10px 0;
+  height: 40px;
+}
+
+/* Liste horizontal ausrichten */
+#mainNav ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+/* Listenelemente */
+#mainNav li {
+  margin: 0 15px;
+}
+
+/* Links gestalten */
+#mainNav a {
+  text-decoration: none;
+  color: white; /* Kein Blau */
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+/* Hover-Effekt */
+#mainNav a:hover {
+  color: #ffcc00; /* z. B. Gelb beim Hover */
+}
+    
+body {
+    font-family: "Merriweather", serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: #4b6584;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    background-color: #f0f0f0;
+}
+
+main {
+    padding: 40px;
+}
+
+
+.card-container {
+    display: flex;
+    flex-direction: column; /* ← wichtig für vertikale Ausrichtung */
+    gap: 20px;
+    align-items: center; /* optional: zentriert die Karten horizontal */
+}
+
+
+.recipe-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 50%;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+    text-align: center;
+}
+
+.recipe-card img {
+    width: 100%;
+    max-width: 400px;
+    height: 200px; /* feste Höhe */
+    object-fit: cover; /* Bild wird zugeschnitten, um das Format zu füllen */
+    
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+.recipe-card h2 {
+    color: #4b6584;
+    margin-bottom: 10px;
+}
+
+.recipe-card p {
+    font-size: 16px;
+    color: #333;
+}
+
+  footer {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+}
+
+</style>
 <body>
-    <nav id="mainNav">
+      <nav id="mainNav" class="">
         <ul>
             <li><a href="/index.html">Home</a></li>
-            <li><a href="/pages/tischReservierung.html">Tischreservierung</a></li>
+            <li><a href="/pages/tischReservierung.html">Tisch Reservierung</a></li>
             <li><a href="/pages/portfolioPage.html">Portfolio</a></li>
             <li><a href="/pages/speisekarte.html">Speisekarte</a></li>
             <li><a href="/pages/rezepteBlog.html">Rezepte-Blog</a></li>
         </ul>
     </nav>
-
     <header>
-        <h1>Für unsere Fans</h1>
-        <p>Willkommen in unserem Rezepte-Blog! <br>Entdecken Sie kleine Klassiker aus unserer Restaurantküche.</p>
+        Unsere Lieblingsrezepte
     </header>
-
     <main>
-        <section class="recipe">
-            <h2>Spaghetti Aglio e Olio</h2>
-            <img src="/ressources/spaghetti.png" alt="Spaghetti Aglio e Olio">
-            <h3>Zutaten:</h3>
-            <ul>
-                <li>200g Spaghetti</li>
-                <li>3 Knoblauchzehen</li>
-                <li>50ml Olivenöl</li>
-                <li>1 Prise Chiliflocken</li>
-                <li>Salz, Petersilie</li>
-            </ul>
-            <h3>Zubereitung:</h3>
-            <ol>
-                <li>Spaghetti in Salzwasser al dente kochen.</li>
-                <li>Knoblauch in Scheiben schneiden und in Olivenöl anbraten.</li>
-                <li>Chiliflocken hinzufügen und kurz mitbraten.</li>
-                <li>Spaghetti abgießen und mit dem Öl vermengen.</li>
-                <li>Mit Petersilie bestreuen und servieren.</li>
-            </ol>
-        </section>
-
-        <section class="recipe">
-            <h2>Kartoffelsuppe</h2>
-            <img src="/ressources/kartoffelsuppe.png" alt="Kartoffelsuppe">
-            <h3>Zutaten:</h3>
-            <ul>
-                <li>500g Kartoffeln</li>
-                <li>1 Zwiebel</li>
-                <li>1 Karotte</li>
-                <li>750ml Gemüsebrühe</li>
-                <li>Sahne, Salz, Pfeffer</li>
-            </ul>
-            <h3>Zubereitung:</h3>
-            <ol>
-                <li>Gemüse schälen und würfeln.</li>
-                <li>Zwiebel anbraten, dann Kartoffeln und Karotte hinzufügen.</li>
-                <li>Mit Brühe aufgießen und 20 Minuten kochen.</li>
-                <li>Pürieren, mit Sahne verfeinern und abschmecken.</li>
-            </ol>
-        </section>
-
-        <section class="recipe">
-            <h2>Apfelstrudel</h2>
-            <img src="/ressources/apfelstrudel.png" alt="Apfelstrudel">
-            <h3>Zutaten:</h3>
-            <ul>
-                <li>1 Blätterteigrolle</li>
-                <li>3 Äpfel</li>
-                <li>Zimt, Zucker, Rosinen</li>
-                <li>1 Ei zum Bestreichen</li>
-            </ul>
-            <h3>Zubereitung:</h3>
-            <ol>
-                <li>Äpfel schälen und in Scheiben schneiden.</li>
-                <li>Mit Zimt, Zucker und Rosinen vermengen.</li>
-                <li>Auf dem Teig verteilen und einrollen.</li>
-                <li>Mit Ei bestreichen und bei 180°C ca. 30 Minuten backen.</li>
-            </ol>
-        </section>
+        <div class="card-container">
+            <div class="recipe-card">
+                <h2>Spaghetti Aglio e Olio</h2>
+                <img src="/ressources/spaghetti.png" alt="Spaghetti Aglio e Olio">
+                <p>Ein einfaches und klassisches italienisches Gericht mit Knoblauch, Olivenöl und Chili.</p>
+            </div>
+            <div class="recipe-card">
+                <h2>Kartoffelsuppe</h2>
+                <img src="/ressources/kartoffelsuppe.png" alt="Kartoffelsuppe">
+                <p>Herzhafte Suppe mit Kartoffeln, Lauch und Gewürzen – perfekt für kalte Tage.</p>
+            </div>
+            <div class="recipe-card">
+                <h2>Apfelstrudel</h2>
+                <img src="/ressources/apfelstrudel.png" alt="Apfelstrudel">
+                <p>Ein süßer Klassiker mit Äpfeln, Zimt und knusprigem Teig – warm serviert ein Genuss.</p>
+            </div>
+        </div>
     </main>
-
     <footer>
         <p>&copy; 2024 Unser Restaurant. Alle Rechte vorbehalten.</p>
     </footer>
 </body>
-
 </html>
