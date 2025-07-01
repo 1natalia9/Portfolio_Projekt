@@ -1,6 +1,104 @@
-<nav id="mainNav" class="">
-           <ul>
-           <ul>
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Rezepte-Karten</title>
+</head>
+<style>
+/* Navigation allgemein */
+#mainNav {
+  background-color: #4b6584;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* Links gestalten */
+#mainNav a {
+  text-decoration: none;
+  color: white; /* Kein Blau */
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+/* Hover-Effekt */
+#mainNav a:hover {
+  color: #ffcc00; /* z. B. Gelb beim Hover */
+}
+    
+body {
+    font-family: "Merriweather", serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: #4b6584;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    background-color: #f0f0f0;
+}
+
+main {
+    padding: 40px;
+}
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+.recipe-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 20%;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+    text-align: center;
+}
+
+.recipe-card img {
+    width: 100%;
+    max-width: 400px;
+    height: 200px; /* feste Höhe */
+    object-fit: cover; /* Bild wird zugeschnitten, um das Format zu füllen */
+    
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+.recipe-card h2 {
+    color: #4b6584;
+    margin-bottom: 10px;
+}
+
+.recipe-card p {
+    font-size: 16px;
+    color: #333;
+}
+
+  footer {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+}
+
+</style>
+<body>
+      <nav id="mainNav" class="">
+          <ul>
             <a href="../index.html">Home</a>
             <a href="./tischReservierung.html">Tischreservierung</a>
             <a href="./portfolioPage.html">Portfolio</a>
@@ -8,3 +106,55 @@
             <a href="./rezepteBlog.html">Rezepte-Blog</a>
            </ul>
         </nav>
+    <header>
+        Portfolio
+    </header>
+    <main>
+        <div class="card-container">
+            <div class="recipe-card">
+                <h2>Bruschetta</h2>
+                <img src="../ressources/bruschetta.png" alt="Apfelstrudel">
+                <p>Bruschetta mit Avocado, Tomate & Balsamico</p>
+            </div>
+            <div class="recipe-card">
+                <h2>Apfelstrudel</h2>
+                <img src="../ressources/apfelstrudel.png" alt="Apfelstrudel">
+                <p>Ein süßer Klassiker mit Äpfeln, Zimt und knusprigem Teig – warm serviert ein Genuss.</p>
+            </div>
+            <div class="recipe-card">
+                <h2>Apfelstrudel</h2>
+                <img src="../ressources/apfelstrudel.png" alt="Apfelstrudel">
+                <p>Ein süßer Klassiker mit Äpfeln, Zimt und knusprigem Teig – warm serviert ein Genuss.</p>
+            </div>
+            <div class="recipe-card">
+                <h2>Apfelstrudel</h2>
+                <img src="../ressources/apfelstrudel.png" alt="Apfelstrudel">
+                <p>Ein süßer Klassiker mit Äpfeln, Zimt und knusprigem Teig – warm serviert ein Genuss.</p>
+            </div>
+            <div class="recipe-card">
+                <h2>Apfelstrudel</h2>
+                <img src="../ressources/apfelstrudel.png" alt="Apfelstrudel">
+                <p>Ein süßer Klassiker mit Äpfeln, Zimt und knusprigem Teig – warm serviert ein Genuss.</p>
+            </div>
+            <div class="recipe-card">
+                <h2>Spaghetti Aglio e Olio</h2>
+                <img src="../ressources/spaghetti.png" alt="Spaghetti Aglio e Olio">
+                <p>Ein einfaches und klassisches italienisches Gericht mit Knoblauch, Olivenöl und Chili.</p>
+            </div>
+            <div class="recipe-card">
+                <h2>Kartoffelsuppe</h2>
+                <img src="../ressources/kartoffelsuppe.png" alt="Kartoffelsuppe">
+                <p>Herzhafte Suppe mit Kartoffeln, Lauch und Gewürzen – perfekt für kalte Tage.</p>
+            </div>
+            <div class="recipe-card">
+                <h2>Apfelstrudel</h2>
+                <img src="../ressources/apfelstrudel.png" alt="Apfelstrudel">
+                <p>Ein süßer Klassiker mit Äpfeln, Zimt und knusprigem Teig – warm serviert ein Genuss.</p>
+            </div>
+        </div>
+    </main>
+</body>
+ <footer>
+        <p>&copy; 2024 Unser Restaurant. Alle Rechte vorbehalten.</p>
+    </footer>
+</html>
